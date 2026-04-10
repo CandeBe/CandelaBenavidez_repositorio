@@ -1,29 +1,29 @@
 @charset "utf-8";
 h1{
-    color: black
-    font: size 30px;
-    font-family: "montserrat black"
+    color: #1d3edd;
+    font-size: 50px;
+    font-family: "montserrat medium";
 }
 h2{
-    color: black;
-    font-size: 20px;
-    font-family:"montserrat medium" ;
+    color: #1d3edd;
+    font-size: 30px;
+    font-family:"montserrat medium";
 }
 h3{
-    color: black;
-    font-size: 15px;
+    color: #4a4a4a;
+    font-size: 25px;
     font-family: "montserrat regular";
 }
 p{
-    color: black;
-    font-size:12px;
-    font-family: "montserrat regular"}
+    color: #4a4a4a;
+    font-size:18px;
+    font-family: "montserrat regular";
+}
 
 .botonera {
-    width: 1440px;
+    /*width: 1440px;*/
     height: 80px;
     background-color: #1d3edd;
-
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -43,6 +43,9 @@ a{
 a:link{
     color: #f3f0eb;
 }
+a:visited {
+    color: #f3f0eb;
+}
 a:hover{
     color: #d3feb6;
     font-size: medium;
@@ -53,46 +56,56 @@ a:hover{
     margin-right: auto;
   }
 
-#cabecera{
-    background-color:#f3f0eb;
-    width: 1440px;
-    height: 1300px;}
+#cabecera
+.titulo-seccion {
+    position: absolute;
+    top: 300px;
+    width: 100%; 
+    text-align: center;
 
+    color: #1d3edd;
+    font-size: 100px;
+    font-family: "montserrat bold";
+}
  .contenido {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 40px;
         max-width: 1200px;
-        margin: 0 auto;
-        padding: 710px 100px;
+        margin: 50px auto;
  }
 
  .contenido-imagen img {
         object-fit: cover;
-        margin-right: 30px;
+        /*margin-right: 30px;*/
     }
     
 .contenido-texto {
-        max-width: 400px;
+        max-width: 650px;
         text-align: left;
+    }
+
+    .fondo {
+        display: block;
+        width: 100%;
     }
 
 @font-face {
     font-family: "montserrat bold";
-    src: url(fonts/Montserrat-Bold.ttf);format('truetype');
+    src: url(fonts/Montserrat-Bold.ttf) format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 @font-face {
     font-family: "montserrat medium";
-    src: url(fonts/Montserrat-Medium.ttf); format ('true type')
-    font-weight: medium;
+    src: url(fonts/Montserrat-Medium.ttf) format('true type');
+    font: weight 500px;
     font-style: normal;
 }
 @font-face {
     font-family: "montserrat regular";
-    src: url(fonts/Montserrat-Regular.ttf); format ('true type')
+    src: url(fonts/Montserrat-Regular.ttf) format ('true type');
     font-weight: regular;
     font-style: normal;
 }
