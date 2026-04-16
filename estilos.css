@@ -28,7 +28,7 @@ h2{
     font-family:"montserrat medium";
 }
 h3{
-    color: #4a4a4a;
+    color:#1d3edd;
     font-size: 25px;
     font-family: "montserrat regular";
 }
@@ -39,7 +39,6 @@ p{
 }
 
 .botonera {
-    /*width: 1440px;*/
     height: 80px;
     background-color: #1d3edd;
     display: flex;
@@ -76,8 +75,7 @@ a:hover{
     margin-right: auto;
   }
 
-#cabecera
-.titulo {
+#cabecera .titulo {
     width: 100%;
     height: 538px;
     display: flex;
@@ -90,10 +88,10 @@ a:hover{
     background-repeat: no-repeat;
     background-size: cover;    
     background-position: center;
+    margin: 0;
 }
  .contenido {
         display: flex;
-        /*flex-wrap: wrap;*/
         align-items: center;
         justify-content: center;
         gap: 40px;
@@ -115,3 +113,79 @@ a:hover{
         width: 100%;
     }
 
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.footer p {
+    color: #1d3edd;
+}
+.redes{
+    display: flex;
+    gap: 30px;
+}
+
+#cabecera-experiencia-estudios .titulo {
+    width: 100%;
+    height: 538px;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    color: #1d3edd;
+    font-size: 100px;
+    font-family: "montserrat bold";
+    background-image: url(img/fondo_experienciayestudios.png);
+    background-repeat: no-repeat;
+    background-size: cover;    
+    background-position: center;
+    margin: 0;
+    padding-left: 40px;
+    box-sizing: border-box;
+}
+.experiencia {
+    background-image: url(img/fondo_experiencia-lista.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+.contenido-experiencia{
+    max-width: 700px;
+    margin-left: 40px;
+    margin-top: 40px;
+} 
+.experiencia ul {
+    list-style: none;
+}
+.dos-columnas {
+    background-image: url(img/fondo_doscolumnas.png);
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+    display: flex;
+    gap: 150px;
+    padding: 40px;
+}
+.dos-columnas ul {
+    list-style: none;
+}
+.dos-columnas li {
+    color:#1d3edd;
+    font-size:18px;
+    font-family: "montserrat regular";
+}
+.titulo-trabajos{
+    margin-left: 40px;
+    padding: 20px;
+}
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+body {
+    margin: 0;
+}
