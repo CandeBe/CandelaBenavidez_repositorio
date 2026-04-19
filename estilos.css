@@ -8,13 +8,13 @@
 @font-face {
     font-family: "montserrat medium";
     src: url(fonts/Montserrat-Medium.ttf) format('truetype');
-    font: weight 500px;
+    font-weight: 500;
     font-style: normal;
 }
 @font-face {
     font-family: "montserrat regular";
-    src: url(fonts/Montserrat-Regular.ttf) format ('truetype');
-    font-weight: regular;
+    src: url(fonts/Montserrat-Regular.ttf) format('truetype');
+    font-weight: normal;
     font-style: normal;
 }
 h1{
@@ -38,7 +38,7 @@ p{
     font-family: "montserrat regular";
 }
 
-.botonera {
+nav {
     height: 80px;
     background-color: #1d3edd;
     display: flex;
@@ -46,7 +46,7 @@ p{
     align-items: center;
     padding-right: 40px;
 }
-.botonera ul {
+nav ul {
     list-style: none;
     display: flex;
     margin: 0;
@@ -81,7 +81,6 @@ a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #1d3edd;
     font-size: 100px;
     font-family: "montserrat bold";
     background-image: url(img/fondo_sobremi.png);
@@ -113,14 +112,14 @@ a:hover{
         width: 100%;
     }
 
-.footer {
+footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
 }
 
-.footer p {
+footer p {
     color: #1d3edd;
 }
 .redes{
