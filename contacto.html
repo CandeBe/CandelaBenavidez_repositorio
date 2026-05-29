@@ -24,6 +24,49 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <section class="contacto-contenedor">
+            <div class="contacto-grafico">
+                <h3 class="contacto-titulo">Trabajemos juntos</h3>
+                <div class="grafico-forma">
+                    <img src="img/sonrrisa-contacto.svg" alt="Forma gráfica de marca" width="400" height="200">
+                </div>
+            </div>
+            <div class="contacto-formulario-bloque">
+                <form method="POST" action="mailto:dconalmaestudio@gmail.com" target="_blank" enctype="text/plain" class="formulario-contacto">
+                    <div class="form-grupo">
+                        <label for="email">Mail</label>
+                        <input type="email" id="email" name="email" placeholder="Escribe tu correo..." required>
+                    </div>
+                    <div class="form-grupo">
+                        <label for="asunto">Asunto</label>
+                        <input type="text" id="asunto" name="asunto" placeholder="Nombre del proyecto..." required>
+                    </div>
+                    <div class="form-grupo">
+                        <label>¿Qué proyecto tenés en mente?</label>
+                        <div class="opciones-checkbox">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="servicio" value="branding"> Identidad de marca
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="servicio" value="arte"> Dirección de arte
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="servicio" value="digital"> Diseño digital
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-grupo">
+                        <label for="mensaje">Contame tu proyecto</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="En que te puedo ayudar?" required></textarea>
+                    </div>
+                    <div class="form-boton-contenedor">
+                        <button type="submit" class="boton-hablemos">Hablemos</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
     <footer>
         <div class="derechos-reservados">
             <p>2025 Candela | Todos los derechos reservados</p>
