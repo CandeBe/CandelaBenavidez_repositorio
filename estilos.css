@@ -1,4 +1,16 @@
 @charset "utf-8";
+:root {
+    --color-verde: #D3FEB6;
+    --color-azul: #2D3FD8;
+    --color-gris: #4A4A4A;
+    --color-gris-claro: #F1EFEB;
+    --color-blanco: #FDFDFD;
+
+    --fuente-bold: "montserrat bold", sans-serif;
+    --fuente-medium: "montserrat medium", sans-serif;
+    --fuente-regular: "montserrat regular", sans-serif;
+}
+
 @font-face {
     font-family: "montserrat bold";
     src: url(fonts/Montserrat-Bold.ttf) format('truetype');
@@ -17,30 +29,48 @@
     font-weight: normal;
     font-style: normal;
 }
-h1{
-    color: #1d3edd;
-    font-size: 50px;
-    font-family: "montserrat medium";
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-blanco);
+    color: var(--color-gris);
+    font-family: var(--fuente-regular);
 }
-h2{
-    color: #1d3edd;
-    font-size: 30px;
-    font-family:"montserrat medium";
+
+h1 {
+    color: var(--color-azul);
+    font-size: 96px; 
+    font-family: var(--fuente-bold);
 }
-h3{
-    color:#1d3edd;
-    font-size: 25px;
-    font-family: "montserrat regular";
+
+h2 {
+    color: var(--color-azul);
+    font-size: 73px; 
+    font-family: var(--fuente-medium);
 }
-p{
-    color: #4a4a4a;
-    font-size:18px;
-    font-family: "montserrat regular";
+
+h3 {
+    color: var(--color-azul);
+    font-size: 35px; 
+    font-family: var(--fuente-regular);
+}
+
+h4 {
+    color: var(--color-gris); 
+    font-size: 24px; 
+    font-family: var(--fuente-regular);
+}
+
+p {
+    color: var(--color-gris);
+    font-size: 18px;
+    font-family: var(--fuente-regular);
+    line-height: 1.6; 
 }
 
 nav {
     height: 80px;
-    background-color: #1d3edd;
+    background-color: var(--color-azul);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,20 +83,20 @@ nav ul {
     padding: 0;
     gap: 30px; 
     font-size: 15px;
-    font-family: "montserrat medium";
+    font-family: var(--fuente-medium);
 }
 
 a{
     text-decoration: none;
 }
 a:link{
-    color: #f3f0eb;
+    color: var(--color-gris-claro);
 }
 a:visited {
-    color: #f3f0eb;
+    color: var(--color-gris-claro);
 }
 a:hover{
-    color: #d3feb6;
+    color: var(--color-verde);
     font-size: medium;
 }
 .logo {
@@ -75,43 +105,105 @@ a:hover{
     margin-right: auto;
   }
 
+#cabecera {
+    width: 100%;
+    background-color: var(--color-gris-claro); 
+}
+
 #cabecera .titulo {
     width: 100%;
-    height: 538px;
+    max-width: 1920px;
+    height: 767px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 100px;
-    font-family: "montserrat bold";
-    background-image: url(img/fondo_sobremi.png);
+    text-align: center;
+    color: var(--color-verde);
+    background-color: var(--color-gris-claro); /* <-- Tu salvavidas para pantallas gigantes */
+    background-image: url(img/fondo_hero_sobre_mi.svg);
     background-repeat: no-repeat;
     background-size: cover;    
     background-position: center;
-    margin: 0;
 }
  .contenido {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 40px;
-        max-width: 1200px;
-        margin: 50px auto;
+        gap: 60px;
+        max-width: 1684px;
+        margin: 80px auto;
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+        box-sizing: border-box;    
+        background-color: var(--color-blanco);
  }
 
- .contenido-imagen img {
-        object-fit: cover;
-        margin-right: 30px;
-    }
+.contenido-imagen {
+    max-width: 822px;
+    display: flex;
+    justify-content: center;
+}
     
 .contenido-texto {
-        max-width: 50%;
-     }
+    max-width: 822px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido-texto h2 {
+    margin-top: 0;      
+    margin-bottom: 10px;
+}
+
+.contenido-texto h3 {
+    line-height: 1.4;
+    font-weight: 600;
+    margin-top: 0; 
+    margin-bottom: 10px; 
+}
 
 .fondo {
         display: block;
         width: 100%;
     }
+.esencia-card {
+    background-color: var(--color-verde); 
+    border-radius: 15px;                       
+    padding: 25px 20px;                        
+    margin-top: 30px;                          
+    width: 100%;                               
+    box-sizing: border-box;                    
+}
 
+.esencia-lista {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;           
+    list-style: none;              
+    padding: 0;                   
+    margin: 0;
+}
+
+.esencia-item {
+    display: flex;
+    flex-direction: column;        
+    align-items: center;           
+    gap: 12px;                     
+}
+
+.esencia-item img {
+    height: 50px;
+    width: auto;
+}
+
+.esencia-item span {
+    color: var(--color-azul);      
+    font-size: 16px;               
+    font-weight: 500;              
+    text-align: center;
+}
 footer {
     display: flex;
     justify-content: space-between;
