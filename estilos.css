@@ -1,4 +1,11 @@
 @charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --color-verde: #D3FEB6;
     --color-azul: #2D3FD8;
@@ -56,7 +63,7 @@ h3 {
 }
 
 h4 {
-    color: var(--color-gris); 
+    color: var(--color-azul); 
     font-size: 24px; 
     font-family: var(--fuente-regular);
 }
@@ -72,17 +79,11 @@ nav {
     height: 80px;
     background-color: var(--color-azul);
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end; 
     align-items: center;
     padding-right: 40px;
-}
-nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    gap: 30px; 
-    font-size: 15px;
+    gap: 30px;              /* El espacio entre tus enlaces */
+    font-size: 15px;        /* Mové los estilos de fuente acá */
     font-family: var(--fuente-medium);
 }
 
@@ -110,7 +111,7 @@ a:hover{
     background-color: var(--color-gris-claro); 
 }
 
-#cabecera .titulo {
+.cabecera-imagen {
     width: 100%;
     max-width: 1920px;
     height: 767px;
@@ -118,14 +119,24 @@ a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    color: var(--color-verde);
-    background-color: var(--color-gris-claro);
-    background-image: url(img/fondo_hero_sobre_mi.svg);
+    background-image: url(img/index/fondo_hero_sobre_mi.svg);
     background-repeat: no-repeat;
     background-size: cover;    
     background-position: center;
 }
+
+#cabecera h1 {
+    z-index: 1; 
+    width: 300px;
+    text-align: center;
+    color: var(--color-verde);
+    line-height: 1.1;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
  .contenido {
         display: flex;
         align-items: center;
@@ -379,7 +390,6 @@ footer p {
 /*experiencia y estudios*/
 .seccion-banner {
     background-color: var(--color-gris-claro);
-    max-width:1600;
     padding: 40px;
 }
 
@@ -421,6 +431,9 @@ footer p {
     background-color: var(--color-verde);
     padding: 35px 25px;
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .tarjeta-puesto {
@@ -431,11 +444,17 @@ footer p {
     margin-bottom: 10px;
 }
 
-.tarjeta-empresa {
+.tarjeta-empresa h3 {
     font-size: 28px;
     font-family: var(--fuente-bold);
-    line-height: 1.2;
     margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.tarjeta-empresa h4 {
+    font-size: 18px;
+    font-family: var(--fuente-bold);
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -463,7 +482,6 @@ footer p {
 }
 
 .edu-linea-principal {
-    font-size: 18px;
     font-family: var(--fuente-bold);
     color: var(--color-azul);
     margin-top: 0;
@@ -493,6 +511,7 @@ footer p {
     font-family: var(--fuente-bold);
     margin-top: 0;
     margin-bottom: 20px;
+    max-width: 100px;
 }
 
 .lista-items {
@@ -576,6 +595,14 @@ footer p {
 
 .form-grupo input::placeholder, .form-grupo textarea::placeholder {
     color: var(--color-gris);
+}
+
+.form-grupo h3 {
+    font-size: 16px;
+    font-family:var(--fuente-regular);
+    color: var(--color-azul); 
+    font-weight: 400;
+    margin-bottom: 8px;
 }
 
 .opciones-checkbox {
