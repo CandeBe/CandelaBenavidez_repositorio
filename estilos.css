@@ -82,8 +82,8 @@ nav {
     justify-content: flex-end; 
     align-items: center;
     padding-right: 40px;
-    gap: 30px;              /* El espacio entre tus enlaces */
-    font-size: 15px;        /* Mové los estilos de fuente acá */
+    gap: 30px; 
+    font-size: 15px;
     font-family: var(--fuente-medium);
 }
 
@@ -105,6 +105,10 @@ a:hover{
     margin-left: 40px;
     margin-right: auto;
   }
+
+.menu-checkbox {
+  display: none;
+}
 
 #cabecera {
     width: 100%;
@@ -293,7 +297,7 @@ footer p {
     width: 100%;
     height: 599px;
     padding: 40px 30px;
-    box-sizing: border-box; /* solución que encontre para recortar el fondo de las frases */
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -644,4 +648,191 @@ footer p {
 .boton-hablemos:active {
     background-color: var(--color-verde); 
     color: var(--color-azul);   
+}
+
+#menu-check{
+     display: none;
+}
+
+.menu-links {
+    display: flex !important; /* Aseguramos que sea flex */
+    gap: 30px !important;     /* Aquí recuperas el espacio */
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    padding: 0 0.9375em;
+    font-size: 1em;
+}
+
+h1 { 
+    font-size: 2em !important; 
+    line-height: 1.2 !important; 
+    text-align: center; 
+}
+
+h2 { 
+    font-size: 1.625em !important; 
+    line-height: 1.2 !important; 
+    text-align: center; 
+}
+
+h3 { 
+    font-size: 1.25em !important; 
+    text-align: center; 
+}
+
+p { 
+    font-size: 1em !important; 
+    line-height: 1.5 !important; 
+    text-align: center; 
+}
+
+img { 
+    max-width: 100% !important; 
+    height: auto !important; 
+}
+
+ header nav {
+    display: flex;
+    flex-direction: row;      
+    justify-content: space-between; 
+    align-items: center;
+    background-color: var(--color-azul);
+    height: 76px;
+    width: 100%;
+    padding: 0 20px;         
+    position: relative;
+}
+
+.logo {
+    margin: 0;
+    height: 50px;
+    width: auto;
+}
+
+.menu-icono { 
+    display: flex !important; 
+    flex-direction: column; 
+    gap: 5px; 
+    cursor: pointer; 
+}
+
+.menu-icono span { 
+    width: 30px; 
+    height: 3px; 
+    background-color: var(--color-blanco); 
+}
+
+.menu-links { 
+    display: none !important; 
+    flex-direction: column !important; 
+    text-align: center; 
+    gap: 15px; 
+}
+
+#menu-check:checked ~ .menu-links { 
+    display: flex !important; 
+}
+
+header nav a { 
+    font-size: 1.125em; 
+    color: var(--color-blanco); 
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0.9375em;
+    margin: 0.625em auto ;
+    text-align: center;
+}
+
+.contenido-texto { 
+    order: 1; 
+    width: 100%; 
+    text-align: center; 
+    align-items: center; 
+}
+
+.esencia-card { 
+    order: 1.5; 
+    width: 100%; 
+    padding: 1em; 
+}
+
+.contenido-imagen { 
+    order: 2; 
+    width: 100%; 
+    margin-top: -1.75em; 
+}
+
+.esencia-item img { 
+    width: 55px !important; 
+    height: 55px !important; 
+}
+    
+.esencia-item span { 
+    font-size: 0.875em !important; 
+}
+
+.cabecera-imagen {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    min-height: 250px;
+    background-size: contain;
+}
+
+#cabecera {
+    width: 100%;
+    overflow: hidden;
+}
+
+.cabecera-imagen {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+
+.menu-links { 
+    display: none; 
+    flex-direction: column; 
+    text-align: center; 
+    justify-content: center; 
+    align-items: center; 
+    position: absolute; 
+    top: 76px; 
+    left: 0; 
+    width: 100%; 
+    background-color: var(--color-verde);
+    padding: 20px 0; 
+    z-index: 999;
+}
+
+.menu-links a {
+    color: var(--color-azul); 
+    font-weight: 600;
+    padding: 15px;
+    width: 100%;
+    display: block;
+}
+
+footer { 
+    display: flex; 
+    flex-direction: column; 
+    text-align: center; 
+}
+
+footer p { 
+    display: none; 
+}
+
 }
