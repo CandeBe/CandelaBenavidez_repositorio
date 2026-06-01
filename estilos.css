@@ -75,6 +75,11 @@ p {
     line-height: 1.6; 
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 nav {
     height: 80px;
     background-color: var(--color-azul);
